@@ -1,0 +1,364 @@
+:root{
+    --backgroundColor: black;
+    --blueBtn: blue;
+    --greenBtn: green;
+    --blueGreenBtn: linear-gradient(to right, rgb(37, 37, 223), rgb(31, 201, 31));
+    --fontColor:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor); 
+}
+
+button{
+    background: var(--blueGreenBtn);
+    width: 8rem;
+    height: 2rem;
+    color: var(--fontColor);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    max-width: 1024px ;
+    margin: 0 auto;
+}
+
+header{
+    height: 5rem;
+    background-color:var(--fontColor);
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: black;
+    display: flex;
+    z-index: 999;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    margin-left: 2em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.smallBtn button{
+    width: 2em;
+    height: 2em;
+    margin-right: 2em;
+}
+
+#hero{
+    height: calc(100vh - 5rem);
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-color: red;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://media.istockphoto.com/photos/view-on-an-orange-leave-and-autumn-background-picture-id1303003775?k=20&m=1303003775&s=612x612&w=0&h=yLVtC66xHFxrxfWDufB6w43H78TKH8PjNScXhLyfkYk=);
+}
+
+
+
+#hero .bxs-camera{
+    font-size: 6rem;
+    background-color: white;
+    border-radius: .3rem;
+    color: rgb(75, 87, 117);
+}
+
+#hero h3{
+    padding-top: 1rem;
+}
+
+.blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+.firstContent{
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.firstContent p{
+    text-align: justify;
+    max-width: 100ch;
+    padding: 1rem 0;
+}
+
+.first button{
+    margin-top: .7rem;
+}
+
+.second h3{
+    text-align: center;
+    padding: 2rem;
+}
+
+.secondMainGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.firstImage{
+    height: 20rem;
+}
+
+.firstImage img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.flexBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blueFlex span,
+.setLeft span{
+    background-color: blue;
+}
+
+.greenFlex span{
+    background-color: rgb(4, 90, 4);
+}
+
+.flexBtn .blueBtn,
+.flexBtn .greenBtn{
+    width: 50%;
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+    margin: 3rem 0;
+}
+
+.thirdImgFlex h3{
+    background-color: blue;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.thirdImgFlex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thirdImg{
+    height: 63.5rem;
+}
+
+.thirdImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center right;
+}
+
+.thirdImgText{
+    display: flex;
+    flex-direction: column;
+}
+.cameraImg{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.loneCamera{
+    font-size: 3rem;
+    background: var(--blueGreenBtn);
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+.thirdImgText1 p{
+    padding: 1rem 0;
+}
+
+.thirdImgGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.thirdImg2{
+    height: 9.5rem;
+    width: 13rem;
+    background-color: yellow;
+}
+
+.thirdImg2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thirdTextImgGrid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em; 
+}
+
+.thirdTextGrid{
+    width: 20rem;
+    height: 20.8rem;
+}
+
+.thirdTextGrid span{
+    background-color: var(--greenBtn);
+}
+
+.thirdTextGrid img{
+    width: 100%;
+    height: 100%;
+}
+
+.fourth h3{
+    text-align: center;
+    padding: 1rem;
+}
+
+.gridLayout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.fourthGrid{
+    width: 21rem;
+    height: 30rem;
+    position: relative;
+}
+
+.fourthGrid img{
+    width: 100%;
+    height: 70%;
+}
+
+.fourthGrid span{
+    height: 3rem;
+    width: 5.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(3, 3, 78), rgb(31, 201, 31));
+    margin: .5em 0 0 .5em;
+}
+
+.fourthGrid button{
+    background: var(--fontColor);
+    color: var(--backgroundColor);
+    border-radius: 1rem;
+}
+
+.contact{
+   background-color: rgb(56, 53, 53);
+   
+}
+
+.footerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 0 8rem;
+    gap: 1rem;
+}
+
+.footerGrid h4{
+    color: rgb(0, 140, 255);
+    padding: .5rem 0;
+    margin-top: 4rem;
+}
+
+.footerGrid h6{
+    padding: 1rem 0;
+}
+
+.socialMedia{
+    margin-top: .5rem;
+}
+
+.socialMedia span{
+    background-color: var(--greenBtn);
+    border-radius: 50%;
+    padding: .5rem;
+}
+.more h4{
+    margin-left: 1rem;
+}
+
+.suscribe input{
+    height: 2rem;
+    width: 13rem;
+}
+
+.suscribe button{
+    background: rgb(0, 140, 255);;
+}
+
+.dot{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    color: rgb(91, 91, 248);
+}
+
+.white{
+    color: white;
+}
